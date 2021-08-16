@@ -1,0 +1,53 @@
+//
+//  DeathsWidgetView.swift
+//  DeathsWidgetView
+//
+//  Created by E2318556 on 3/8/2564 BE.
+//
+
+import SwiftUI
+import WidgetKit
+
+struct DeathsWidgetView: View{
+    let data: Model
+    
+    var body: some View{
+        if #available(iOS 15.0, *) {
+            VStack(spacing: 0){
+                Text("\(data.covidData.UpdateDate)")
+                    .frame(height: 30)
+                    .font(.system(size: 10))
+                
+                Rectangle()
+                    .foregroundColor(Color(red: 52/255, green: 58/255, blue: 64/255))
+                    .overlay{
+                        VStack(spacing: 2){
+                            
+                            Text("เสียชีวิต")
+                            
+                            Text("\(data.covidData.NewDeaths)")
+                                .fontWeight(.bold)
+                                .font(.system(size: 20))
+                            
+                        }.foregroundColor(Color.white)
+                            .font(.system(size: 15))
+                    }
+            }
+            
+        } else {
+            // Fallback on earlier versions
+        }
+    }
+}
+
+
+struct Covid19_Widget3_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        Group{
+            Covid19_Widget3EntryView(data: Model(date: Date(),covidData: CovidData(Confirmed: 0, Recovered: 0, Hospitalized: 0, Deaths: 0, active: 0, NewConfirmed: 0, NewRecovered: 0, NewDeaths: 0, NewHospitalized: 0, UpdateDate: "")))
+                .previewContext(WidgetPreviewContext(family: .systemSmall))
+        }
+    }
+}
+
