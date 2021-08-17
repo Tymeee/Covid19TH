@@ -14,7 +14,6 @@
 		6C0D940626C2CFF000AA16A9 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D940326C2CFF000AA16A9 /* PhoneView.swift */; };
 		6C1926D526CA0D5F00C19049 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1926D426CA0D5F00C19049 /* OptionView.swift */; };
 		6C1926D626CA0D5F00C19049 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1926D426CA0D5F00C19049 /* OptionView.swift */; };
-		6C1926D726CA11E700C19049 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1926D426CA0D5F00C19049 /* OptionView.swift */; };
 		6C1B966626B2F679003B767C /* Covid19AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1B964426B2F678003B767C /* Covid19AppApp.swift */; };
 		6C1B966726B2F679003B767C /* Covid19AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1B964426B2F678003B767C /* Covid19AppApp.swift */; };
 		6C1B966826B2F679003B767C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1B964526B2F678003B767C /* ContentView.swift */; };
@@ -35,6 +34,7 @@
 		6C2A94DD26B92F9000C32F96 /* DeathsWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A94DC26B92F9000C32F96 /* DeathsWidgetView.swift */; };
 		6C2A94DF26B92FF300C32F96 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A94DE26B92FF300C32F96 /* MediumWidgetView.swift */; };
 		6C2A94E126B9339500C32F96 /* HospitalizedWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A94E026B9339500C32F96 /* HospitalizedWidgetView.swift */; };
+		6C394FC226CB4F7F00B23842 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1926D426CA0D5F00C19049 /* OptionView.swift */; };
 		6C6DF30A26B927040059201D /* Covid19WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DF30926B927040059201D /* Covid19WidgetBundle.swift */; };
 		6CAE15D226BC280100EAD591 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE15D126BC280100EAD591 /* InformationView.swift */; };
 		6CAE15D326BC280100EAD591 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE15D126BC280100EAD591 /* InformationView.swift */; };
@@ -136,12 +136,8 @@
 			children = (
 				6CC83A7226B6A6F600DA349E /* Covid19App--iOS--Info.plist */,
 				6C1B964426B2F678003B767C /* Covid19AppApp.swift */,
-				6C0D3D6726C6CE7E005DD01F /* SplashScreen.swift */,
-				6C1B964526B2F678003B767C /* ContentView.swift */,
 				6C1926D426CA0D5F00C19049 /* OptionView.swift */,
-				6CB2C3AB26C2BD8D0032A0CA /* HomeView.swift */,
-				6C27108F26C42DC800CCC05B /* MapView.swift */,
-				6CAE15D126BC280100EAD591 /* InformationView.swift */,
+				6C394FC126CB4F3F00B23842 /* Main View */,
 				6CC101F326C1346E0012F1C3 /* Assets.xcassets */,
 				6C23772C26C2CB89002C4328 /* Dashboard */,
 				6CEA4B5026C2794C00920418 /* Information */,
@@ -203,6 +199,18 @@
 				6C2A94DE26B92FF300C32F96 /* MediumWidgetView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6C394FC126CB4F3F00B23842 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D3D6726C6CE7E005DD01F /* SplashScreen.swift */,
+				6C1B964526B2F678003B767C /* ContentView.swift */,
+				6CB2C3AB26C2BD8D0032A0CA /* HomeView.swift */,
+				6C27108F26C42DC800CCC05B /* MapView.swift */,
+				6CAE15D126BC280100EAD591 /* InformationView.swift */,
+			);
+			name = "Main View";
 			sourceTree = "<group>";
 		};
 		6CEA4B5026C2794C00920418 /* Information */ = {
@@ -389,7 +397,7 @@
 				6C23773426C2CD15002C4328 /* HomeView.swift in Sources */,
 				6C2A94E126B9339500C32F96 /* HospitalizedWidgetView.swift in Sources */,
 				6C2A94DD26B92F9000C32F96 /* DeathsWidgetView.swift in Sources */,
-				6C1926D726CA11E700C19049 /* OptionView.swift in Sources */,
+				6C394FC226CB4F7F00B23842 /* OptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
