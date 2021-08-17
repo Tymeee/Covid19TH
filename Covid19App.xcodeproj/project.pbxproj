@@ -136,7 +136,6 @@
 			children = (
 				6CC83A7226B6A6F600DA349E /* Covid19App--iOS--Info.plist */,
 				6C1B964426B2F678003B767C /* Covid19AppApp.swift */,
-				6C1926D426CA0D5F00C19049 /* OptionView.swift */,
 				6C394FC126CB4F3F00B23842 /* Main View */,
 				6CC101F326C1346E0012F1C3 /* Assets.xcassets */,
 				6C23772C26C2CB89002C4328 /* Dashboard */,
@@ -206,6 +205,7 @@
 			children = (
 				6C0D3D6726C6CE7E005DD01F /* SplashScreen.swift */,
 				6C1B964526B2F678003B767C /* ContentView.swift */,
+				6C1926D426CA0D5F00C19049 /* OptionView.swift */,
 				6CB2C3AB26C2BD8D0032A0CA /* HomeView.swift */,
 				6C27108F26C42DC800CCC05B /* MapView.swift */,
 				6CAE15D126BC280100EAD591 /* InformationView.swift */,
