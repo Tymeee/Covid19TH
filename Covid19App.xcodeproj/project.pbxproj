@@ -12,8 +12,6 @@
 		6C0D940426C2CFF000AA16A9 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D940326C2CFF000AA16A9 /* PhoneView.swift */; };
 		6C0D940526C2CFF000AA16A9 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D940326C2CFF000AA16A9 /* PhoneView.swift */; };
 		6C0D940626C2CFF000AA16A9 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D940326C2CFF000AA16A9 /* PhoneView.swift */; };
-		6C1926D526CA0D5F00C19049 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1926D426CA0D5F00C19049 /* OptionView.swift */; };
-		6C1926D626CA0D5F00C19049 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1926D426CA0D5F00C19049 /* OptionView.swift */; };
 		6C1B966626B2F679003B767C /* Covid19AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1B964426B2F678003B767C /* Covid19AppApp.swift */; };
 		6C1B966726B2F679003B767C /* Covid19AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1B964426B2F678003B767C /* Covid19AppApp.swift */; };
 		6C1B966826B2F679003B767C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1B964526B2F678003B767C /* ContentView.swift */; };
@@ -34,7 +32,6 @@
 		6C2A94DD26B92F9000C32F96 /* DeathsWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A94DC26B92F9000C32F96 /* DeathsWidgetView.swift */; };
 		6C2A94DF26B92FF300C32F96 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A94DE26B92FF300C32F96 /* MediumWidgetView.swift */; };
 		6C2A94E126B9339500C32F96 /* HospitalizedWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A94E026B9339500C32F96 /* HospitalizedWidgetView.swift */; };
-		6C394FC226CB4F7F00B23842 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1926D426CA0D5F00C19049 /* OptionView.swift */; };
 		6C6DF30A26B927040059201D /* Covid19WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DF30926B927040059201D /* Covid19WidgetBundle.swift */; };
 		6CAE15D226BC280100EAD591 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE15D126BC280100EAD591 /* InformationView.swift */; };
 		6CAE15D326BC280100EAD591 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE15D126BC280100EAD591 /* InformationView.swift */; };
@@ -74,7 +71,6 @@
 /* Begin PBXFileReference section */
 		6C0D3D6726C6CE7E005DD01F /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		6C0D940326C2CFF000AA16A9 /* PhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
-		6C1926D426CA0D5F00C19049 /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
 		6C1B964426B2F678003B767C /* Covid19AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19AppApp.swift; sourceTree = "<group>"; };
 		6C1B964526B2F678003B767C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C1B964B26B2F679003B767C /* Covid19App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid19App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,7 +201,6 @@
 			children = (
 				6C0D3D6726C6CE7E005DD01F /* SplashScreen.swift */,
 				6C1B964526B2F678003B767C /* ContentView.swift */,
-				6C1926D426CA0D5F00C19049 /* OptionView.swift */,
 				6CB2C3AB26C2BD8D0032A0CA /* HomeView.swift */,
 				6C27108F26C42DC800CCC05B /* MapView.swift */,
 				6CAE15D126BC280100EAD591 /* InformationView.swift */,
@@ -359,7 +354,6 @@
 				6C0D940426C2CFF000AA16A9 /* PhoneView.swift in Sources */,
 				6CEA4B5626C27BD800920418 /* ThaiWidget.swift in Sources */,
 				6C0D3D6826C6CE7E005DD01F /* SplashScreen.swift in Sources */,
-				6C1926D526CA0D5F00C19049 /* OptionView.swift in Sources */,
 				6CEA4B5426C27B3C00920418 /* EngWidget.swift in Sources */,
 				6C27109026C42DC800CCC05B /* MapView.swift in Sources */,
 				6CAE15DB26BC341C00EAD591 /* CardView.swift in Sources */,
@@ -378,7 +372,6 @@
 				6CB2C3AD26C2BD8D0032A0CA /* HomeView.swift in Sources */,
 				6C0D940526C2CFF000AA16A9 /* PhoneView.swift in Sources */,
 				6C1B966926B2F679003B767C /* ContentView.swift in Sources */,
-				6C1926D626CA0D5F00C19049 /* OptionView.swift in Sources */,
 				6C1B966726B2F679003B767C /* Covid19AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +390,6 @@
 				6C23773426C2CD15002C4328 /* HomeView.swift in Sources */,
 				6C2A94E126B9339500C32F96 /* HospitalizedWidgetView.swift in Sources */,
 				6C2A94DD26B92F9000C32F96 /* DeathsWidgetView.swift in Sources */,
-				6C394FC226CB4F7F00B23842 /* OptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +524,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8VLVR7RL4N;
+				DEVELOPMENT_TEAM = 37MK63SMW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Covid19App--iOS--Info.plist";
@@ -541,7 +533,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,7 +559,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8VLVR7RL4N;
+				DEVELOPMENT_TEAM = 37MK63SMW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Covid19App--iOS--Info.plist";
@@ -576,7 +568,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -673,7 +665,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -702,7 +694,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

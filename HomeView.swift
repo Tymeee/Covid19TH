@@ -49,16 +49,6 @@ struct HomeView: View {
                                     .font(.caption)
                                     .padding(.trailing)
                                 
-                                Button(action: {
-                                    showOption.toggle()
-                                    
-                                }, label: {
-                                    Image(systemName: "plus")
-                                        .padding(.trailing)
-                                    
-                                }).sheet(isPresented: $showOption){
-                                    OptionView()
-                                }
                                 
                             }
                         }
