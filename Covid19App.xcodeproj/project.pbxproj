@@ -528,6 +528,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Covid19App--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Covid19TH;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -540,7 +541,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Tyme.Covid19App;
+				PRODUCT_BUNDLE_IDENTIFIER = Tyme.Covid19TH;
 				PRODUCT_NAME = Covid19App;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -563,6 +564,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Covid19App--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Covid19TH;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -575,7 +577,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Tyme.Covid19App;
+				PRODUCT_BUNDLE_IDENTIFIER = Tyme.Covid19TH;
 				PRODUCT_NAME = Covid19App;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -647,7 +649,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8VLVR7RL4N;
+				DEVELOPMENT_TEAM = 37MK63SMW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Covid19 Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Covid19 Widget";
@@ -659,7 +661,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tyme.Covid19App.Covid19-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = Tyme.Covid19TH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -676,7 +678,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8VLVR7RL4N;
+				DEVELOPMENT_TEAM = 37MK63SMW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Covid19 Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Covid19 Widget";
@@ -688,7 +690,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Tyme.Covid19App.Covid19-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = Tyme.Covid19TH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
