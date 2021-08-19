@@ -23,11 +23,7 @@ struct ContentView: View {
                         Text("Home")
                         
                     }
-                /*MapView()
-                    .tabItem{
-                        Image(systemName: "map.fill")
-                        Text("Map")
-                    }*/
+
                 
                 InformationView()
                     .tabItem{
