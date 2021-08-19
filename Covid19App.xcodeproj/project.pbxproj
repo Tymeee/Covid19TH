@@ -481,7 +481,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.TymeDev.Covid19TH;
+				PRODUCT_BUNDLE_IDENTIFIER = Tyme.CovidTH;
 				PRODUCT_NAME = Covid19App;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -517,7 +517,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.TymeDev.Covid19TH;
+				PRODUCT_BUNDLE_IDENTIFIER = Tyme.CovidTH;
 				PRODUCT_NAME = Covid19App;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -547,7 +547,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.TymeDev.Covid19TH.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = TymeDev.Covid19TH.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -576,7 +576,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 0.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.TymeDev.Covid19TH.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = TymeDev.Covid19TH.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
