@@ -37,7 +37,8 @@ struct HomeView: View {
                         
                     }.headerProminence(.increased)
                 
-                }.onAppear {
+                }
+                .onAppear {
                     loadData()
                 }
                 .navigationBarTitle("Dashboard 🇹🇭")
@@ -48,6 +49,13 @@ struct HomeView: View {
                                 Text("Update:\(covidData?.UpdateDate ?? "")")
                                     .font(.caption)
                                     .padding(.trailing)
+                                
+                                Button(action:{
+                                    loadData()
+                                }, label:{
+                                    Image(systemName: "arrow.clockwise")
+                                        .foregroundColor(Color?(Color(red: 229/255, green: 56/255, blue: 59/255)))
+                                })
                                 
                                 
                             }

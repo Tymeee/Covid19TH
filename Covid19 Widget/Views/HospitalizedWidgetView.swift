@@ -31,12 +31,12 @@ struct HospitalizedWidgetView: View{
                 Rectangle()
                     .foregroundColor(Color(red: 256/255, green: 172/255, blue: 60/255))
                     .overlay{
-                        VStack(alignment: .center, spacing: 2){
+                        VStack(alignment: .center, spacing: -1){
                             Text("รักษาอยู่")
                                 
                             Text("\(data.covidData.NewHospitalized)")
                                 .fontWeight(.bold)
-                                .font(.system(size: 20))
+                                .font(.system(size: 25))
                             
                         }.foregroundColor(Color.white)
                             .font(.system(size: 15))

@@ -40,8 +40,8 @@ struct InformationView: View {
     "https://wheretotestcovid19.com/",
     "https://koncovid.com/"]
     
-    @State private var isThai:Bool = false
-    @State private var isEng:Bool = true
+    @State private var isThai:Bool = true
+    @State private var isEng:Bool = false
     
     var body: some View {
         NavigationView{
@@ -49,10 +49,16 @@ struct InformationView: View {
             List(){
                 Section(header: Text("Add Widgets - วิดเจ็ต")){
                     VStack(alignment: .leading, spacing: 20){
-                        if self.isEng{
-                            EngWidget()
-                        }else{
+                        if self.isThai{
                             ThaiWidget()
+                        } else{
+                            EngWidget()
+                        }
+                        
+                        if self.isThai{
+                            ThaiWidget()
+                        }else{
+                            EngWidget()
                         }
                     }.padding(.top, 5)
                 }
@@ -79,18 +85,19 @@ struct InformationView: View {
                             Toggle("ENG", isOn: Eng)
 
                             Toggle("TH", isOn: Thai)
-                            
                         }
                     }
                 }
                 .accentColor(Color(red: 229/255, green: 56/255, blue: 59/255))
         }
     }
+    
 }
 
 struct InformationView_Previews: PreviewProvider {
     static var previews: some View {
         InformationView()
+            
             
             
     }

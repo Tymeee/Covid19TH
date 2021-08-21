@@ -24,7 +24,7 @@ struct CardView: View{
                     .background(Color.white)
                     .cornerRadius(cornerRadius)
 
-                VStack(spacing: 10) {
+                VStack(spacing: 5) {
                     Image(resourceImage)
                         .resizable()
                         .background(Color.gray)
@@ -35,12 +35,12 @@ struct CardView: View{
                     
                     LazyVStack(alignment: .leading, spacing: 3) {
                         Text(resourceName)
-                            .font(.system(size: 16))
+                            .font(.system(size: 15))
                             .fontWeight(.semibold)
                             .foregroundColor(.black)
                         
                         Text(resourceDescription)
-                            .font(.system(size: 13))
+                            .font(.system(size: 12))
                             .padding(.bottom, 15)
                             .foregroundColor(.black)
                     }.padding([.leading, .trailing])
