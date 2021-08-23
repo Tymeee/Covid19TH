@@ -32,14 +32,14 @@ struct DailyView: View {
             VStack(){
                 
                 // New cases
-                RoundedRectangle(cornerRadius: 20)
+                RoundedRectangle(cornerRadius: 25)
                     .foregroundColor(Color(red: 229/255, green: 56/255, blue: 59/255))
-                    .frame(height: 245)
-                    .padding(.bottom, 5)
+                    .frame(height: 270)
+                    .padding(.bottom, 3)
                 
                     .overlay(
                         VStack(spacing: 5){
-                            HStack(spacing: 0){
+                            HStack(spacing: -5){
                                 Text("ติดเชื้อ ")
                                 Image("virus")
                                     .resizable()
@@ -61,7 +61,7 @@ struct DailyView: View {
                 //New hospitalized
                 HStack(spacing: 10){
                     // New recovered
-                    RoundedRectangle(cornerRadius: 20)
+                    RoundedRectangle(cornerRadius: 25)
                         .foregroundColor(Color(red: 0/255, green: 127/255, blue: 95/255))
                         .overlay(
                             VStack(spacing: 5){
@@ -75,7 +75,7 @@ struct DailyView: View {
                             })
                     
                     // Hospitalized
-                    RoundedRectangle(cornerRadius: 20)
+                    RoundedRectangle(cornerRadius: 25)
                         .foregroundColor(Color(red: 256/255, green: 172/255, blue: 60/255))
                         .overlay(
                             VStack(spacing: 5){
@@ -88,13 +88,13 @@ struct DailyView: View {
                                     .TotalStatsStyle()
                             }
                         )
-                }.frame(height: 190)
-                    .padding(.bottom, 5)
+                }.frame(height: 210)
+                    .padding(.bottom, 3)
                 
                 
                 //Deaths
                 HStack(spacing: 10){
-                    RoundedRectangle(cornerRadius: 20)
+                    RoundedRectangle(cornerRadius: 25)
                         .foregroundColor(Color(red: 52/255, green: 58/255, blue: 64/255))
                         .overlay(
                             VStack(spacing: 5){
@@ -112,7 +112,7 @@ struct DailyView: View {
                                 Text("\(covidData2?.Deaths ?? 0)")
                                     .TotalStatsStyle()
                             })
-                }.frame(height: 135)
+                }.frame(height: 150)
                 
                 
                 Link(destination: URL(string: "https://easysunday.com/labs-covid-19/?fbclid=IwAR0EyTiFP18210i3DCSPQZVE7-ucLzhScrIAM3OXyKX2OTfmWToj-5jqBbw")!, label: {Text("ข้อมูลจาก: Sunday Thailand")
@@ -123,7 +123,6 @@ struct DailyView: View {
             }.onAppear (perform: loadData2)
                 .listStyle(GroupedListStyle())
                 .listRowInsets(EdgeInsets())
-                .padding([.leading, .trailing, .top, .bottom], 8)
                 .foregroundColor(Color.white)
             
             

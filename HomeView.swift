@@ -29,6 +29,7 @@ struct HomeView: View {
                 List(){
                     
                     DailyView()
+                        .listRowBackground(Color.clear)
                     
                     Section(header: HStack{
                         Text("รวมเบอร์สายด่วน")
@@ -36,35 +37,35 @@ struct HomeView: View {
                         PhoneView()
                         
                     }.headerProminence(.increased)
-                
+                    
                 }
                 .onAppear {
                     loadData()
                 }
                 .navigationBarTitle("Dashboard 🇹🇭")
                 
-                    .toolbar{
-                        ToolbarItem{
-                            HStack(spacing: -10){
-                                Text("Update:\(covidData?.UpdateDate ?? "")")
-                                    .font(.caption)
-                                    .padding(.trailing)
-                                
-                                Button(action:{
-                                    loadData()
-                                }, label:{
-                                    Image(systemName: "arrow.clockwise")
-                                        .foregroundColor(Color?(Color(red: 229/255, green: 56/255, blue: 59/255)))
-                                })
-                                
-                                
-                            }
+                .toolbar{
+                    ToolbarItem{
+                        HStack(spacing: -10){
+                            Text("Update:\(covidData?.UpdateDate ?? "")")
+                                .font(.caption)
+                                .padding(.trailing)
+                            
+                            Button(action:{
+                                loadData()
+                            }, label:{
+                                Image(systemName: "arrow.clockwise")
+                                    .foregroundColor(Color?(Color(red: 229/255, green: 56/255, blue: 59/255)))
+                            })
+                            
+                            
                         }
                     }
+                }
                 
-                    .refreshable {
-                        loadData()
-                    }
+                .refreshable {
+                    loadData()
+                }
             } else {
                 // Fallback on earlier versions
             }
