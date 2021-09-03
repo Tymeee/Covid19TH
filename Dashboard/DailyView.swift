@@ -23,6 +23,7 @@ struct CovidData2: Decodable {
 struct DailyView: View {
     
     @State var covidData2: CovidData2?
+    private var paddingHeight : CGFloat = 5
     
     var body: some View {
         
@@ -35,7 +36,6 @@ struct DailyView: View {
                 RoundedRectangle(cornerRadius: 25)
                     .foregroundColor(Color(red: 229/255, green: 56/255, blue: 59/255))
                     .frame(height: 270)
-                    .padding(.bottom, 3)
                 
                     .overlay(
                         VStack(spacing: 5){
@@ -47,18 +47,14 @@ struct DailyView: View {
                                     .aspectRatio(contentMode: .fit)
                             }.frame(height: 30)
                             
-                            
                             Text("\(covidData2?.NewConfirmed ?? 0)")
                                 .DailyStatsStyle()
                             
                             Text("\(covidData2?.Confirmed ?? 0)")
                                 .TotalStatsStyle()
                         }
-                        
-                    )
+                    ).padding(.bottom, paddingHeight)
                 
-                //New recovered
-                //New hospitalized
                 HStack(spacing: 10){
                     // New recovered
                     RoundedRectangle(cornerRadius: 25)
@@ -89,7 +85,7 @@ struct DailyView: View {
                             }
                         )
                 }.frame(height: 210)
-                    .padding(.bottom, 3)
+                    .padding(.bottom, paddingHeight)
                 
                 
                 //Deaths

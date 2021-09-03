@@ -10,8 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
-    
     var body: some View {
         
         
@@ -22,9 +20,7 @@ struct ContentView: View {
                     .tabItem{
                         Image(systemName: "house")
                         Text("Home")
-                        
                     }
-
                 
                 InformationView()
                     .tabItem{
@@ -32,16 +28,9 @@ struct ContentView: View {
                         Text("Information")
                     }
                 
-                
-                
+            
             }.accentColor((Color(red: 229/255, green: 56/255, blue: 59/255)))
 
-            
-            .onAppear {
-                UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
-            }.onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-                UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
-            }
             
         } logoView: {
             
