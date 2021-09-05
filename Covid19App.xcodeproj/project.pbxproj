@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0491F826E5178B00C0E2D8 /* ProvinceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0491F726E5178B00C0E2D8 /* ProvinceView.swift */; };
+		6C0491F926E51A4B00C0E2D8 /* ProvinceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0491F726E5178B00C0E2D8 /* ProvinceView.swift */; };
 		6C0D3D6826C6CE7E005DD01F /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D3D6726C6CE7E005DD01F /* SplashScreen.swift */; };
 		6C0D940426C2CFF000AA16A9 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D940326C2CFF000AA16A9 /* PhoneView.swift */; };
 		6C0D940626C2CFF000AA16A9 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D940326C2CFF000AA16A9 /* PhoneView.swift */; };
@@ -73,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6C0491F726E5178B00C0E2D8 /* ProvinceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceView.swift; sourceTree = "<group>"; };
 		6C0D3D6726C6CE7E005DD01F /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		6C0D940326C2CFF000AA16A9 /* PhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
 		6C1B964426B2F678003B767C /* Covid19AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19AppApp.swift; sourceTree = "<group>"; };
@@ -174,6 +177,7 @@
 			children = (
 				6C23773526C2CD60002C4328 /* DailyView.swift */,
 				6C0D940326C2CFF000AA16A9 /* PhoneView.swift */,
+				6C0491F726E5178B00C0E2D8 /* ProvinceView.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -314,6 +318,7 @@
 			files = (
 				6C23773626C2CD60002C4328 /* DailyView.swift in Sources */,
 				6CB2C3AC26C2BD8D0032A0CA /* HomeView.swift in Sources */,
+				6C0491F826E5178B00C0E2D8 /* ProvinceView.swift in Sources */,
 				6CAE15D226BC280100EAD591 /* InformationView.swift in Sources */,
 				6C1B966826B2F679003B767C /* ContentView.swift in Sources */,
 				6C0D940426C2CFF000AA16A9 /* PhoneView.swift in Sources */,
@@ -331,6 +336,7 @@
 			files = (
 				6C23773826C2CD8A002C4328 /* DailyView.swift in Sources */,
 				6C0D940626C2CFF000AA16A9 /* PhoneView.swift in Sources */,
+				6C0491F926E51A4B00C0E2D8 /* ProvinceView.swift in Sources */,
 				6C6DF30A26B927040059201D /* Covid19WidgetBundle.swift in Sources */,
 				6C1B96A826B2FBC1003B767C /* Covid19_Widget.swift in Sources */,
 				6C2A94DF26B92FF300C32F96 /* MediumWidgetView.swift in Sources */,

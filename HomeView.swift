@@ -31,18 +31,29 @@ struct HomeView: View {
                     DailyView()
                         .listRowBackground(Color.clear)
                     
-                    Section(header: HStack{
+                    
+                    Section(header:
+                        Text("ยอดติดเชื้อรายจังหวัด 🇹🇭")
+                    ){
+                        ProvinceView()
+                    }.headerProminence(.increased)
+                    
+                    
+                    Section(header:
                         Text("รวมเบอร์สายด่วน")
-                    }){
+                    ){
                         PhoneView()
                         
                     }.headerProminence(.increased)
+                    
+                        
+                    
                     
                 }
                 .onAppear {
                     loadData()
                 }
-                .navigationBarTitle("Dashboard 🇹🇭")
+                .navigationBarTitle("Dashboard")
                 
                 .toolbar{
                     ToolbarItem{
@@ -95,7 +106,7 @@ extension Text {
     func DailyStatsStyle() -> some View {
         self
             .font(.system(size: 36))
-            .fontWeight(.bold)
+            .fontWeight(.semibold)
             .animation(Animation.default)
     }
     

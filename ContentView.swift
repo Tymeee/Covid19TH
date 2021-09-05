@@ -37,12 +37,6 @@ struct ContentView: View {
             }.accentColor((Color(red: 229/255, green: 56/255, blue: 59/255)))
 
             
-            .onAppear {
-                UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
-            }.onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-                UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
-            }
-            
         } logoView: {
             
             Image("Logo")

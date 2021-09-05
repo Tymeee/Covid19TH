@@ -35,7 +35,7 @@ struct DailyView: View {
                 RoundedRectangle(cornerRadius: 25)
                     .foregroundColor(Color(red: 229/255, green: 56/255, blue: 59/255))
                     .frame(height: 270)
-                    .padding(.bottom, 3)
+                    .padding(.bottom, 5)
                 
                     .overlay(
                         VStack(spacing: 5){
@@ -89,7 +89,7 @@ struct DailyView: View {
                             }
                         )
                 }.frame(height: 210)
-                    .padding(.bottom, 3)
+                    .padding(.bottom, 5)
                 
                 
                 //Deaths
@@ -98,13 +98,9 @@ struct DailyView: View {
                         .foregroundColor(Color(red: 52/255, green: 58/255, blue: 64/255))
                         .overlay(
                             VStack(spacing: 5){
-                                HStack(spacing: 2){
-                                    Text("เสียชีวิต")
+                                Text("เสียชีวิต ") + (Text(Image(systemName: "waveform.path.ecg")))
                                     
-                                    Image("deathicon")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                }.frame(height: 25)
+                                
                                 
                                 Text("\(covidData2?.NewDeaths ?? 0)")
                                     .DailyStatsStyle()
