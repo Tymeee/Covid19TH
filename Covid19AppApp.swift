@@ -15,3 +15,4 @@ struct Covid19AppApp: App {
         }
     }
 }
+

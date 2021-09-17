@@ -98,10 +98,8 @@ struct DailyView: View {
                         .foregroundColor(Color(red: 52/255, green: 58/255, blue: 64/255))
                         .overlay(
                             VStack(spacing: 5){
-                                Text("เสียชีวิต ") + (Text(Image(systemName: "waveform.path.ecg")))
+                                Text("เสียชีวิต 💀")
                                     
-                                
-                                
                                 Text("\(covidData2?.NewDeaths ?? 0)")
                                     .DailyStatsStyle()
                                 

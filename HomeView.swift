@@ -56,8 +56,16 @@ struct HomeView: View {
                 .navigationBarTitle("Dashboard")
                 
                 .toolbar{
-                    ToolbarItem{
+                    
+                    
+                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
+                        
                         HStack(spacing: -10){
+                            Image("Logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            Spacer()
+
                             Text("Update:\(covidData?.UpdateDate ?? "")")
                                 .font(.caption)
                                 .padding(.trailing)
