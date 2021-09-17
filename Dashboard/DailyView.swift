@@ -40,7 +40,7 @@ struct DailyView: View {
                     .overlay(
                         VStack(spacing: 5){
                             HStack(spacing: -5){
-                                Text("ติดเชื้อ ")
+                                Text("Cases ")
                                 Image("virus")
                                     .resizable()
                                     .foregroundColor(.white)
@@ -65,7 +65,7 @@ struct DailyView: View {
                         .foregroundColor(Color(red: 0/255, green: 127/255, blue: 95/255))
                         .overlay(
                             VStack(spacing: 5){
-                                Text("หายป่วย ") + Text(Image(systemName: "cross.fill"))
+                                Text("Recovered ") + Text(Image(systemName: "cross.fill"))
                                 
                                 Text("\(covidData2?.NewRecovered ?? 0)")
                                     .DailyStatsStyle()
@@ -79,7 +79,7 @@ struct DailyView: View {
                         .foregroundColor(Color(red: 256/255, green: 172/255, blue: 60/255))
                         .overlay(
                             VStack(spacing: 5){
-                                Text("รักษาอยู่ ") + (Text(Image(systemName: "cross.case.fill")))
+                                Text("Hospitalized ") + (Text(Image(systemName: "cross.case.fill")))
                                 
                                 Text("\(covidData2?.NewHospitalized ?? 0)")
                                     .DailyStatsStyle()
@@ -98,7 +98,7 @@ struct DailyView: View {
                         .foregroundColor(Color(red: 52/255, green: 58/255, blue: 64/255))
                         .overlay(
                             VStack(spacing: 5){
-                                Text("เสียชีวิต 💀")
+                                Text("Death 💀")
                                     
                                 Text("\(covidData2?.NewDeaths ?? 0)")
                                     .DailyStatsStyle()
