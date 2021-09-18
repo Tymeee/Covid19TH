@@ -50,15 +50,15 @@ struct InformationView: View {
                 Section(header: Text("Add Widgets - วิดเจ็ต")){
                     VStack(alignment: .leading, spacing: 20){
                         if self.isThai{
-                            ThaiWidget()
+                            ThaiView()
                         } else{
-                            EngWidget()
+                            EnglishView()
                         }
                         
                         if self.isThai{
-                            ThaiWidget()
+                            ThaiView()
                         }else{
-                            EngWidget()
+                            EnglishView()
                         }
                     }.padding(.top, 5)
                 }

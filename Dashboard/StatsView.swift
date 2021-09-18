@@ -20,7 +20,7 @@ struct CovidData2: Decodable {
     var UpdateDate: String
 }
 
-struct DailyView: View {
+struct StatsView: View {
     
     @State var covidData2: CovidData2?
     
@@ -144,6 +144,6 @@ struct DailyView: View {
 
 struct DailyView_Previews: PreviewProvider {
     static var previews: some View {
-        DailyView()
+        StatsView()
     }
 }

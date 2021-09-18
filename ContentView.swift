@@ -16,7 +16,7 @@ struct ContentView: View {
         SplashScreen(imageSize: CGSize(width: 128, height: 128)) {
             
             TabView {
-                HomeView()
+                DashboardView()
                     .tabItem{
                         Image(systemName: "house")
                         Text("Home")

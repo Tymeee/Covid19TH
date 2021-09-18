@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct DashboardView: View {
     
     @State private var showOption = false
     
@@ -28,7 +28,7 @@ struct HomeView: View {
                 
                 List(){
                     
-                    DailyView()
+                    StatsView()
                         .listRowBackground(Color.clear)
                     
                     
@@ -143,6 +143,6 @@ struct CovidData: Decodable {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        DashboardView()
     }
 }

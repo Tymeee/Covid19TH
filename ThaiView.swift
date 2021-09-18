@@ -1,16 +1,16 @@
 //
-//  WidgetInfo.swift
-//  WidgetInfo
+//  ThaiWidget.swift
+//  ThaiWidget
 //
 //  Created by E2318556 on 10/8/2564 BE.
 //
 
 import SwiftUI
 
-struct EngWidget: View {
+struct ThaiView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
-            Text("1. From the Home Screen, hold onto an icon icon until the apps jiggle.")
+            Text("1. จากหน้าจอโฮม ให้แตะวิดเจ็ตหรือพื้นที่ว่างค้างไว้จนกว่าแอพจะสั่น")
             
             HStack{
                 Spacer()
@@ -21,9 +21,9 @@ struct EngWidget: View {
                 Spacer()
             }
             
-            Text("2. Tap the '+' button in the upper-left corner.")
+            Text("2. แตะปุ่ม '+' ปุ่มเพิ่มสีเทา ที่มุมซ้ายบน")
             
-            Text("3. Scroll or search for Covid19TH.")
+            Text("3. เลือกวิดเจ็ต แล้วเลือกจากขนาดวิดเจ็ตสามขนาด จากนั้นแตะเพิ่มวิดเจ็ต")
             
             HStack{
                 Spacer()
@@ -34,9 +34,7 @@ struct EngWidget: View {
                 Spacer()
             }
 
-            Text("4. Select a widget, choose from three widget sizes, then tap Add Widget.")
-            
-            Text("5. Tap Done.")
+            Text("4. แตะเสร็จสิ้น")
                  
             HStack{
                 Spacer()
@@ -51,8 +49,8 @@ struct EngWidget: View {
     }
 }
 
-struct EngWidget_Previews: PreviewProvider {
+struct ThaiWidget_Previews: PreviewProvider {
     static var previews: some View {
-        EngWidget()
+        ThaiView()
     }
 }
