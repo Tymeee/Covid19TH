@@ -94,7 +94,6 @@
 		6CAE15DA26BC341C00EAD591 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		6CB2C3AB26C2BD8D0032A0CA /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		6CC101F326C1346E0012F1C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6CC83A7226B6A6F600DA349E /* Covid19App--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Covid19App--iOS--Info.plist"; sourceTree = "<group>"; };
 		6CC83A7826B6A7D700DA349E /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		6CC83A8326B6A7D700DA349E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		6CEA4B5326C27B3C00920418 /* EnglishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishView.swift; sourceTree = "<group>"; };
@@ -125,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				6CC101F326C1346E0012F1C3 /* Assets.xcassets */,
-				6CC83A7226B6A6F600DA349E /* Covid19App--iOS--Info.plist */,
 				6C9AB79C26F5F99400787001 /* Main View */,
 				6C9AB79A26F5F8D300787001 /* Dashboard */,
 				6C9AB79B26F5F92600787001 /* Information */,
