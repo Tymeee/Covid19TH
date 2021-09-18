@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SplashScreen<Content: View, Logo: View>: View {
+struct LaunchScreen<Content: View, Logo: View>: View {
     
     var content: Content
     var logoView: Logo

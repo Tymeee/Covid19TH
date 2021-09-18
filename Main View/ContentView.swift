@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         
         
-        SplashScreen(imageSize: CGSize(width: 128, height: 128)) {
+        LaunchScreen(imageSize: CGSize(width: 128, height: 128)) {
             
             TabView {
                 DashboardView()
