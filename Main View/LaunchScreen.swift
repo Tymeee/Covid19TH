@@ -42,7 +42,6 @@ struct LaunchScreen<Content: View, Logo: View>: View {
                     logoView
                         .matchedGeometryEffect(id: "LOGO", in: animation)
                         .frame(width: imageSize.width, height: imageSize.height)
-                    
                 }
                 
                 HStack{
