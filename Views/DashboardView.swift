@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct DashboardView: View {
-    
-    @State private var showOption = false
-    
+        
     @State private var covidData: CovidData?
     
     private var phoneCalls: [String] = ["1330", "1323", "1421", "1506", "1646", "1668", "1669"]
@@ -24,70 +22,56 @@ struct DashboardView: View {
     var body: some View {
         
         NavigationView{
-            if #available(iOS 15.0, *) {
+            List(){
+                StatsView()
+                    .listRowBackground(Color.clear)
                 
-                List(){
+                Section(header:
+                            Text("ยอดติดเชื้อรายจังหวัด 🇹🇭")
+                ){
                     
-                    StatsView()
-                        .listRowBackground(Color.clear)
-                    
-                    
-                    Section(header:
-                        Text("ยอดติดเชื้อรายจังหวัด 🇹🇭")
-                    ){
-                        ProvinceView()
-                    }.headerProminence(.increased)
-                    
-                    
-                    Section(header:
-                        Text("รวมเบอร์สายด่วน")
-                    ){
-                        PhoneView()
-                        
-                    }.headerProminence(.increased)
-                    
-                        
-                    
-                    
-                }
-                .onAppear {
-                    loadData()
-                }
-                .navigationBarTitle("Dashboard")
+                    ProvinceView()
+                }.headerProminence(.increased)
                 
-                .toolbar{
+                Section(header:
+                            Text("รวมเบอร์สายด่วน")
+                ){
+                    PhoneBox()
                     
+                }.headerProminence(.increased)
+            }
+            .onAppear {
+                loadData()
+            }
+            .navigationBarTitle("Dashboard")
+            
+            .toolbar{
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
                     
-                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
-                        
-                        HStack(spacing: -10){
-                            Image("Logo")
+                    HStack(spacing: -10){
+                        Image("Logo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            Spacer()
-
-                            Text("Update:\(covidData?.UpdateDate ?? "")")
-                                .font(.caption)
-                                .padding(.trailing)
-                            
-                            Button(action:{
-                                loadData()
-                            }, label:{
-                                Image(systemName: "arrow.clockwise")
-                                    .foregroundColor(Color?(Color(red: 229/255, green: 56/255, blue: 59/255)))
-                            })
-                            
-                            
-                        }
+                        Spacer()
+                        
+                        Text("Update:\(covidData?.UpdateDate ?? "")")
+                            .font(.caption)
+                            .padding(.trailing)
+                        
+                        Button(action:{
+                            loadData()
+                        }, label:{
+                            Image(systemName: "arrow.clockwise")
+                                .foregroundColor(Color?(Color(red: 229/255, green: 56/255, blue: 59/255)))
+                        })
                     }
                 }
-                
-                .refreshable {
-                    loadData()
-                }
-            } else {
-                // Fallback on earlier versions
             }
+            
+            .refreshable {
+                loadData()
+            }
+            
         }
     }
     

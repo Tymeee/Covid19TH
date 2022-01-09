@@ -10,12 +10,10 @@ import SwiftUI
 
 struct ProvinceView: View {
     @StateObject var viewModel = ViewModel()
-    @State var searchText = ""
     
     var body: some View {
         
             VStack{
-    
                 ScrollView{
                     ForEach((viewModel.courses), id: \.self) { course in
                         HStack{
@@ -27,15 +25,10 @@ struct ProvinceView: View {
                                 .fontWeight(.semibold)
                                 .padding(.trailing, 20)
                                 .scaleEffect(1.2)
-
-    
-                            
                         }
                         
                         Divider()
                             
-                        
-                        
                     }
                 }.frame(height: 500)
                 

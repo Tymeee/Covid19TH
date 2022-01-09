@@ -63,15 +63,7 @@ struct InformationView: View {
                     }.padding(.top, 5)
                 }
                 
-                Section(header: Text("Additional resources")){
-                    CardView(resourceImage: $resourceImages[0], resourceName: $resourceNames[0], resourceDescription: $resourceDescriptions[0], borderColor: $borderColors[0], URLsource: $URLsources[0])
-                    
-                    CardView(resourceImage: $resourceImages[1], resourceName: $resourceNames[1], resourceDescription: $resourceDescriptions[1], borderColor: $borderColors[1], URLsource: $URLsources[1])
-                    
-                    CardView(resourceImage: $resourceImages[2], resourceName: $resourceNames[2], resourceDescription: $resourceDescriptions[2], borderColor: $borderColors[2], URLsource: $URLsources[2])
-                    
-                    CardView(resourceImage: $resourceImages[3], resourceName: $resourceNames[3], resourceDescription: $resourceDescriptions[3], borderColor: $borderColors[3], URLsource: $URLsources[3])
-                }
+                
                 
                 
             }.navigationTitle("Information")
