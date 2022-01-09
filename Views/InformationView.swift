@@ -49,38 +49,12 @@ struct InformationView: View {
             List(){
                 Section(header: Text("Add Widgets - วิดเจ็ต")){
                     VStack(alignment: .leading, spacing: 20){
-                        if self.isThai{
-                            ThaiView()
-                        } else{
-                            EnglishView()
-                        }
-                        
-                        if self.isThai{
-                            ThaiView()
-                        }else{
-                            EnglishView()
-                        }
+                        ThaiView()
                     }.padding(.top, 5)
                 }
-                
-                
-                
-                
             }.navigationTitle("Information")
                 .listStyle(SidebarListStyle())
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing){
-                        let Thai = Binding<Bool>(get: { self.isThai}, set: { self.isThai = $0; self.isEng = false})
-                        let Eng = Binding<Bool>(get: { self.isEng}, set: { self.isThai = false; self.isEng = $0})
-                        
-                        HStack(spacing: 0){
-                            Toggle("ENG", isOn: Eng)
-                            
-                            Toggle("TH", isOn: Thai)
-                        }
-                    }
-                }
-                .accentColor(Color(red: 229/255, green: 56/255, blue: 59/255))
+                
             
         }
     }

@@ -55,8 +55,6 @@ struct LaunchScreen<Content: View, Logo: View>: View {
                             .matchedGeometryEffect(id: "LOGO", in: animation)
                             .frame(height: 0)
                     }
-                    
-                    
                 }
                 
             }

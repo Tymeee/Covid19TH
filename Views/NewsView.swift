@@ -10,12 +10,18 @@ import WebKit
 
 struct NewsView: View {
     
+    
     var body: some View {
+        
         NavigationView {
-            List {
-                NewsBox()
-            }
+            List(newsList, id: \.id) { news in
+                NewsBox(news: news)
+                
+            }.accentColor(Color.black)
+            .navigationTitle("Covid-19 News")
+                
         }
+        
     }
 }
 

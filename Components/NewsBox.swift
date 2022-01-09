@@ -11,6 +11,7 @@ import WebKit
 struct NewsBox: View {
     
     @State private var showWebView = false
+    var news: News
     
     var body: some View {
  
@@ -18,17 +19,18 @@ struct NewsBox: View {
         Button {
             showWebView.toggle()
         } label: {
-            HStack {
-                Image("Logo")
+            HStack(spacing: 15) {
+                Image(news.newsLogo)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
+                    .frame(height: 50)
+                    .cornerRadius(10)
                 
-                Text("Hello World")
-            }
+                Text(news.newsName)
+            }.padding([.top, .bottom], 8)
         }
         .sheet(isPresented: $showWebView) {
-            WebView(url: URL(string: "https://www.thairath.co.th/timeline_corona")!)
+            WebView(url: URL(string: news.newsURL)!)
         }
         
     }
@@ -51,6 +53,6 @@ struct WebView: UIViewRepresentable {
 
 struct NewsBox_Previews: PreviewProvider {
     static var previews: some View {
-        NewsBox()
+        NewsBox(news: newsList[0])
     }
 }

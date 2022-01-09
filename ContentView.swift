@@ -22,18 +22,21 @@ struct ContentView: View {
                         Text("Home")
                     }
                 
+                NewsView()
+                    .tabItem{
+                        Image(systemName: "newspaper.fill")
+                        Text("News")
+                    }
+                
                 InformationView()
                     .tabItem{
                         Image(systemName: "info.circle.fill")
                         Text("Information")
                     }
-                
             
             }.accentColor((Color(red: 229/255, green: 56/255, blue: 59/255)))
-
             
         } logoView: {
-            
             Image("Logo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)

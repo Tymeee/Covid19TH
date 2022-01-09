@@ -11,10 +11,7 @@ struct DashboardView: View {
         
     @State private var covidData: CovidData?
     
-    private var phoneCalls: [String] = ["1330", "1323", "1421", "1506", "1646", "1668", "1669"]
-    
-    private var govAgencies: [String] = ["สปสช.", "กรมสุขภาพจิต", "กรมควบคุมโรค", "สํานักงานประกันสังคม", "ศูนย์เอราวัณ", "สายด่วนโควิด", "สถาบันการแพทย์ฉุกเฉินแห่งชาติ"]
-    
+   
     init() {
         UITableView.appearance().showsVerticalScrollIndicator = false
     }
@@ -44,6 +41,7 @@ struct DashboardView: View {
                 loadData()
             }
             .navigationBarTitle("Dashboard")
+            
             
             .toolbar{
                 ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
@@ -93,39 +91,7 @@ struct DashboardView: View {
 }
 
 
-extension Text {
-    
-    func DailyStatsStyle() -> some View {
-        self
-            .font(.system(size: 36))
-            .fontWeight(.semibold)
-            .animation(Animation.default)
-    }
-    
-    func TotalStatsStyle() -> some View {
-        self
-            .font(.footnote)
-            .fontWeight(.semibold)
-            .animation(Animation.default)
-    }
-    
-}
-
-//JSON Data type
-struct CovidData: Decodable {
-    var Confirmed: Int
-    var Recovered: Int
-    var Hospitalized: Int
-    var Deaths: Int
-    var active: Int
-    var NewConfirmed: Int
-    var NewRecovered: Int
-    var NewDeaths: Int
-    var NewHospitalized: Int
-    var UpdateDate: String
-}
-
-struct HomeView_Previews: PreviewProvider {
+struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
     }
