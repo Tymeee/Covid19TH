@@ -26,7 +26,6 @@
 		6C2A94DF26B92FF300C32F96 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A94DE26B92FF300C32F96 /* MediumWidgetView.swift */; };
 		6C2A94E126B9339500C32F96 /* HospitalizedWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2A94E026B9339500C32F96 /* HospitalizedWidgetView.swift */; };
 		6C47115C278A0E870003B9B2 /* ThaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA4B5526C27BD800920418 /* ThaiView.swift */; };
-		6C47115D278A0E870003B9B2 /* EnglishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA4B5326C27B3C00920418 /* EnglishView.swift */; };
 		6C47115F278A11AB0003B9B2 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C47115E278A11AB0003B9B2 /* NewsView.swift */; };
 		6C471160278A11AB0003B9B2 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C47115E278A11AB0003B9B2 /* NewsView.swift */; };
 		6C47116C278A19840003B9B2 /* NewsBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C47116B278A19840003B9B2 /* NewsBox.swift */; };
@@ -47,7 +46,6 @@
 		6CAE15D226BC280100EAD591 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE15D126BC280100EAD591 /* InformationView.swift */; };
 		6CB2C3AC26C2BD8D0032A0CA /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB2C3AB26C2BD8D0032A0CA /* DashboardView.swift */; };
 		6CC101F426C1346F0012F1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CC101F326C1346E0012F1C3 /* Assets.xcassets */; };
-		6CEA4B5426C27B3C00920418 /* EnglishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA4B5326C27B3C00920418 /* EnglishView.swift */; };
 		6CEA4B5626C27BD800920418 /* ThaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEA4B5526C27BD800920418 /* ThaiView.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,7 +116,6 @@
 		6CC101F326C1346E0012F1C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CC83A7826B6A7D700DA349E /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		6CC83A8326B6A7D700DA349E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		6CEA4B5326C27B3C00920418 /* EnglishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishView.swift; sourceTree = "<group>"; };
 		6CEA4B5526C27BD800920418 /* ThaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,7 +216,6 @@
 				6C23773526C2CD60002C4328 /* StatsView.swift */,
 				6C0D940326C2CFF000AA16A9 /* PhoneBox.swift */,
 				6C0491F726E5178B00C0E2D8 /* ProvinceView.swift */,
-				6CEA4B5326C27B3C00920418 /* EnglishView.swift */,
 				6CEA4B5526C27BD800920418 /* ThaiView.swift */,
 				6C47116B278A19840003B9B2 /* NewsBox.swift */,
 			);
@@ -358,7 +354,6 @@
 				6CEA4B5626C27BD800920418 /* ThaiView.swift in Sources */,
 				6C471176278AA5DC0003B9B2 /* DashboardStyle.swift in Sources */,
 				6C0D3D6826C6CE7E005DD01F /* LaunchScreen.swift in Sources */,
-				6CEA4B5426C27B3C00920418 /* EnglishView.swift in Sources */,
 				6C1B966626B2F679003B767C /* Covid19AppApp.swift in Sources */,
 				6C47117A278AA67F0003B9B2 /* JSON.swift in Sources */,
 			);
@@ -377,7 +372,6 @@
 				6C2A94DF26B92FF300C32F96 /* MediumWidgetView.swift in Sources */,
 				6C2A94D826B92EF100C32F96 /* ConfirmedWidgetView.swift in Sources */,
 				6C47117B278AA67F0003B9B2 /* JSON.swift in Sources */,
-				6C47115D278A0E870003B9B2 /* EnglishView.swift in Sources */,
 				6C2A94DB26B92F5800C32F96 /* RecoveredWidgetView.swift in Sources */,
 				6C47115C278A0E870003B9B2 /* ThaiView.swift in Sources */,
 				6C2A94E126B9339500C32F96 /* HospitalizedWidgetView.swift in Sources */,
