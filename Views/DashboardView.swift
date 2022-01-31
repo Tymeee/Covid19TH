@@ -27,7 +27,13 @@ struct DashboardView: View {
                             Text("ยอดติดเชื้อรายจังหวัด 🇹🇭")
                 ){
                     
-                    ProvinceView()
+                    ProvinceCase()
+                }.headerProminence(.increased)
+                
+                Section(header:
+                            Text("ยอดเสียชีวิตรายจังหวัด 🇹🇭")
+                ){
+                    ProvinceDeath()
                 }.headerProminence(.increased)
                 
                 Section(header:

@@ -46,7 +46,7 @@ struct Covid19_Widget_Previews: PreviewProvider {
     static var previews: some View {
         
         Group{
-            Covid19_WidgetEntryView(data: Model(date: Date(),covidData: CovidData(Confirmed: 0, Recovered: 0, Hospitalized: 0, Deaths: 0, active: 0, NewConfirmed: 0, NewRecovered: 0, NewDeaths: 0, NewHospitalized: 0, UpdateDate: "")))
+            Covid19_WidgetEntryView(data: Model(date: Date(),covidData: CovidData(Confirmed: 8444, Recovered: 0, Hospitalized: 0, Deaths: 0, active: 0, NewConfirmed: 0, NewRecovered: 0, NewDeaths: 0, NewHospitalized: 0, UpdateDate: "")))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
             
             

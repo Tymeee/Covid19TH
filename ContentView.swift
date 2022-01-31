@@ -22,6 +22,12 @@ struct ContentView: View {
                         Text("Home")
                     }
                 
+                MapView()
+                    .tabItem{
+                        Image(systemName: "map.fill")
+                        Text("Map")
+                    }
+                
                 NewsView()
                     .tabItem{
                         Image(systemName: "newspaper.fill")

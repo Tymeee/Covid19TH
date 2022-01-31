@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct ProvinceView: View {
+struct ProvinceCase: View {
     @StateObject var viewModel = ViewModel()
     
     var body: some View {
@@ -40,9 +40,42 @@ struct ProvinceView: View {
     }
 }
 
+struct ProvinceDeath: View {
+    @StateObject var viewModel2 = ViewModel()
+    
+    var body: some View {
+        
+        VStack{
+            ScrollView{
+                ForEach((viewModel2.courses), id: \.self) { course in
+                    HStack{
+                        Text((course.province))
+                            .scaleEffect(1.05)
+                        Spacer()
+                        
+                        Text("\(course.new_death)")
+                            .fontWeight(.semibold)
+                            .padding(.trailing, 20)
+                            .scaleEffect(1.2)
+                    }
+                    
+                    Divider()
+                    
+                }
+            }.frame(height: 500)
+            
+        }
+        .onAppear{
+            viewModel2.fetch()
+        }
+        
+    }
+}
+ 
 
-struct ProvinceView_Previews: PreviewProvider {
+
+struct ProvinceCase_Previews: PreviewProvider {
     static var previews: some View {
-        ProvinceView()
+        ProvinceDeath()
     }
 }

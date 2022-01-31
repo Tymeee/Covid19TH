@@ -27,6 +27,7 @@ struct CovidData: Decodable {
 struct Course: Hashable, Codable{
     var province: String
     var new_case: Int
+    var new_death: Int
 }
 
 class ViewModel: ObservableObject{

@@ -41,7 +41,6 @@ struct InformationView: View {
      "https://koncovid.com/"]
     
     @State private var isThai:Bool = true
-    @State private var isEng:Bool = false
     
     var body: some View {
         NavigationView{
