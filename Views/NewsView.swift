@@ -14,14 +14,13 @@ struct NewsView: View {
     var body: some View {
         
         NavigationView {
-            GeometryReader { geometry in
-                List{
-                    ForEach(newsList, id: \.id) { news in
-                        NewsOption(news: news)
-                    }
-                    
+            List{
+                ForEach(newsList, id: \.id) { news in
+                    NewsOption(news: news)
                 }
-            }.navigationTitle("Covid-19 News")
+                
+                
+            }.navigationTitle("Local News")
                 .accentColor(Color.black)
             
         }.listStyle(InsetGroupedListStyle())

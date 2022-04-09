@@ -34,10 +34,16 @@ struct ContentView: View {
                         Text("News")
                     }
                 
-                InformationView()
+                /*InformationView()
                     .tabItem{
                         Image(systemName: "info.circle.fill")
                         Text("Information")
+                    }*/
+                
+                AppView()
+                    .tabItem{
+                        Image(systemName: "apps.iphone")
+                        Text("Apps")
                     }
             
             }.accentColor((Color(red: 229/255, green: 56/255, blue: 59/255)))
